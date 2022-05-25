@@ -942,10 +942,14 @@
     <div class="section" id="main-message-text">
                 <div style="font-size:18px; font-family:Ebrima; width:40%; text-align:center; margin-right:-40%">
                     <p>
-                        Were you able to pick out the trends in associated features (e.g. acousticness, energy, danceability, etc.)? <br>
+                        As we all know, music has changed drastically over the past couple of decades.
+                        Between societal trends and technological advancements, new styles of music emerged.
                     </p>
                     <p>
-                        Let's take a closer look.
+                        Even music players evolved from record players to jukeboxes, cassette tapes and CDs, to iPods and now streaming services on any device.
+                    </p>
+                    <p>
+                        The attributes of music followed suit. Let's now take a close look at the overall changes across the decades.
                     </p>
                 </div>
     </div>
@@ -1053,93 +1057,83 @@
     </div>
 
 
-
     <div class="section" id="sliders">
-        <div class="row" style="margin-bottom:1%;">
-            <div class="container" style="margin-top:5%; align-content:center; width:100%;">
-                <p style="font-family: Ebrima; font-size:18px;">
-                    Select three features to filter on and use the sliders to find which years match your favorite styles of music.
-                </p>
-            </div>
-        </div>
-        <div class="row justify-content-between" style="margin-bottom: 7%; font-family: Ebrima; font-size: 18px;">
-                <div class="col-5">
-                        <div class="row align-items-center" id="slider1" >
-                            <div class="col-4">
-                                <select id="selectSlider1" style="font-family:Ebrima; font-size:15px">
-                                    <option value="acousticness">Acousticness</option>
-                                    <option value="danceability">Danceability</option>
-                                    <option value="energy">Energy</option>
-                                    <option value="instrumentalness">Instrumentalness</option>
-                                    <option value="liveness">Liveness</option>
-                                    <option value="speechiness">Speechiness</option>
-                                    <option value="valence">Valence</option>
-                                </select>
-                            </div>
-                            <div class="col-4">
-                                <div id="slider-range1"></div>
-                            </div>
-<!--                            <div class="w-100"></div>-->
-<!--                            <div class="col-3">-->
-<!--                                <p id="value-range1" style="font-size:13px"></p>-->
-<!--                            </div>-->
-                        </div>
+        <div class="row justify-content-between">
+            <div class="col-2" id = "color-picker" style="margin-top: 10%; background-color: rgba(255, 255, 255, 0.75);"><p id="value-color-picker"></p>
+                <div class="row align-items-center">
+                    <div class="col-sm" id="color-picker0" align="right" style="font-size:16px; font-family: Ebrima;">
+                        <p id="value-color-picker0">Acousticness</p>
+                    </div>
+                </div>
+                <div class="row align-items-center" style="margin-top:15%">
+                    <div class="col-sm" id="color-picker1" align="right" style="font-size:16px; font-family: Ebrima;">
+                        <p id="value-color-picker1">Danceability</p>
+                    </div>
+                </div>
+                <div class="row align-items-center" style="margin-top:15%">
+                    <div class="col-sm" id="color-picker2" align="right" style="font-size:16px; font-family: Ebrima;">
+                        <p id="value-color-picker2">Energy</p>
+                    </div>
+                </div>
+                <div class="row align-items-center" style="margin-top:15%;">
+                    <div class="col-sm" id="color-picker3" align="right" style="font-size:16px; font-family: Ebrima;">
+                        <p id="value-color-picker3">Instrumentalness</p>
+                    </div>
+                </div>
+                <div class="row align-items-center" style="margin-top:15%">
+                    <div class="col-sm" id="color-picker4" align="right" style="font-size:16px; font-family: Ebrima;top:-6px;">
+                        <p id="value-color-picker4">Liveness</p>
+                    </div>
+                </div>
+                <div class="row align-items-center" style="margin-top:15%">
 
-                        <div class="row align-items-center" id="slider2">
-                                <div class="col-4">
-                                    <select id="selectSlider2"style="font-family:Ebrima; font-size:15px">
-                                        <option value="acousticness">Acousticness</option>
-                                        <option value="danceability" selected>Danceability</option>
-                                        <option value="energy">Energy</option>
-                                        <option value="instrumentalness">Instrumentalness</option>
-                                        <option value="liveness">Liveness</option>
-                                        <option value="speechiness">Speechiness</option>
-                                        <option value="valence">Valence</option>
-                                    </select>
-                                </div>
-                                <div class="col-6">
-                                    <div id="slider-range2"></div>
-                                </div>
-<!--                                <div class="w-100"></div>-->
-<!--                                <div class="col-2">-->
-<!--                                    <p id="value-range2" style="font-size:15px"></p>-->
-<!--                                </div>-->
-                        </div>
-                         <div class="row align-items-center" id="slider3">
-                             <div class="col-4">
-                                <select id="selectSlider3" style="font-family:Ebrima; font-size:15px">
-                                    <option value="acousticness">Acousticness</option>
-                                    <option value="danceability">Danceability</option>
-                                    <option value="energy" selected>Energy</option>
-                                    <option value="instrumentalness">Instrumentalness</option>
-                                    <option value="liveness">Liveness</option>
-                                    <option value="speechiness">Speechiness</option>
-                                    <option value="valence">Valence</option>
-                                </select>
-                             </div>
-<!--                             <div class="col-2" style="align-content: center;">-->
-<!--                                 <p id="value-range3" style="font-size:15px"></p>-->
-<!--                             </div>-->
-                            <div class="col-6">
-                                <div id="slider-range3"></div>
-                            </div>
-<!--                             <div class="w-100"></div>-->
-                        </div>
+                    <div class="col-sm" id="color-picker6" align="right" style="font-size:16px; font-family: Ebrima;top:32px;">
+                        <p id="value-color-picker6">Speechiness</p>
+                    </div>
                 </div>
-            <div class="col-6" style="margin-top:30%; padding:1%; border-radius:5px; border: 2px solid #333333; background-color: white">
-                <div style="text-align:center;">
-                    <p style="font-family:Ebrima; font-size:18px;">
-                        You might enjoy music from these years:
-                    </p>
+                <div class="row align-items-center" style="margin-top:10%">
+                    <div class="col-sm" id="color-picker8" align="right" style="font-size:16px; font-family: Ebrima;top:74px;">
+                        <p id="value-color-picker8">Valence</p>
+                    </div>
                 </div>
-                <div id="year-table" style="font-family:Ebrima; font-size:13px"></div>
+
+            </div>
+
+            <div class="col-4" id ="slider-div" style="margin-top: 10%; background-color: rgba(255, 255, 255, 0.90);">
+                <div id="slider-color-picker"></div>
+
+            </div>
+            <div class="col" style="font-family:Ebrima; font-size: 18px; background-color: rgba(255, 255, 255, 0.90);">
+                <div id="sliders-description" style="margin-top:15%; text-align: center;">
+                    <p>Use the sliders to input values for different features of music</p>
+                    <p>The year with the lowest prediction error is given as output.</p>
+                    <p style="font-size:12px; text-align: end;">*Predictions calculated using <a href="https://en.wikipedia.org/wiki/Root-mean-square_deviation">RMSE</a></p>
+                </div>
+                <div id="sliders-output" style="width: 75%; margin:15%; background-color: white; border: 2px solid black; border-radius:5px; margin-top: 15%; font-family:Ebrima; font-size: 16px; text-align: center;">
+                    <p id="value-final0">
+                        The year that best matches your choices is</p>
+                    <p id="value-final" style="font-size:24px;"></p>
+                    <p><b>Average values for this year:</b></p>
+                    <div style="width:50%; margin:auto;">
+                        <p id="acousticness"></p>
+                        <p id="danceability"></p>
+                        <p id="energy"></p>
+                        <p id="instrumentalness"></p>
+                        <p id="liveness"></p>
+                        <p id="speechiness"></p>
+                        <p id="valence"></p>
+
+                    </div>
+                </div>
             </div>
 
         </div>
+
+
     </div>
 
     <div class="section" id="sources">
-        <h3 style="font-family: Ebrima">Team EARS</h3>
+        <h1 style="font-size: 100px">Team EARS</h1>
         <div class="container" style="margin-top:5%">
             <div class="row" style="font-family: Ebrima; font-size:14px;">
                 <div class="col justify-content-center">
@@ -1165,18 +1159,27 @@
                     </p>
                 </div>
                 <div class="col">
-                    Adwait Pradhan
+                    <div class="col text-center">
+                        <img src="background_imgs/adwait_headshot.jpg" width="200" height="200">
+                    </div>
+                    <br>
+                    <p style="text-align: center">
+                        Adwait Pradhan
+                        <br>
+                        M.Eng Computer Science
+                    </p>
                 </div>
                 <div class="col">
                     <div class="col text-center">
                         <img src="background_imgs/suren_headshot.jpg" width="200" height="200">
                     </div>
+                    <br>
                     <p style="text-align: center">
                         Surendrabikram Thapa
                         <br>
-                        [Degree]
+                        M.S Computer Science
                     </p>
-                  
+
                 </div>
             </div>
         </div>
